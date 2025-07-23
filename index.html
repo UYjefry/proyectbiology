@@ -1,154 +1,315 @@
-<!-- Header -->
-<div class="header">
-    <h1>El Peligro de las Redes Sociales</h1>
-    <p>Conoce los riesgos más comunes y cómo protegerte en el mundo digital.</p>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>El Peligro de las Redes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<!-- Cards Grid -->
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            line-height: 1.6;
+        }
 
-<!-- Frontend -->
-<div class="card blue">
-    <h3 class="card-title">Ciberbullying</h3>
-    <div class="item">
-        <div class="item-name">Acoso en línea</div>
-        <div class="item-desc">Ataques, insultos y humillaciones constantes a través de redes o mensajes.</div>
-        <span class="item-tech">Violencia digital</span>
-    </div>
-    <div class="item">
-        <div class="item-name">Consecuencias emocionales</div>
-        <div class="item-desc">Puede causar ansiedad, depresión o incluso pensamientos suicidas.</div>
-        <span class="item-tech">Salud mental</span>
-    </div>
-    <div class="item">
-        <div class="item-name">Cómo actuar</div>
-        <div class="item-desc">Bloquea, guarda pruebas y denuncia a plataformas o autoridades.</div>
-        <span class="item-tech">Prevención</span>
-    </div>
-</div>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-<!-- API -->
-<div class="card green">
-    <h3 class="card-title">Grooming</h3>
-    <div class="item">
-        <div class="item-name">Manipulación de menores</div>
-        <div class="item-desc">Adultos fingen ser jóvenes para generar confianza con fines sexuales.</div>
-        <span class="item-tech">Delito digital</span>
-    </div>
-    <div class="item">
-        <div class="item-name">Etapas del engaño</div>
-        <div class="item-desc">Empieza con halagos y termina en presión o chantaje.</div>
-        <span class="item-tech">Peligro oculto</span>
-    </div>
-    <div class="item">
-        <div class="item-name">Prevención</div>
-        <div class="item-desc">Nunca compartas fotos privadas ni datos personales con desconocidos.</div>
-        <span class="item-tech">Protección infantil</span>
-    </div>
-</div>
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-<!-- Security -->
-<div class="card red">
-    <h3 class="card-title">Sextorsión</h3>
-    <div class="item">
-        <div class="item-name">Chantaje digital</div>
-        <div class="item-desc">Amenazan con difundir imágenes íntimas si no se cumplen sus exigencias.</div>
-        <span class="item-tech">Extorsión</span>
-    </div>
-    <div class="item">
-        <div class="item-name">No cedas</div>
-        <div class="item-desc">Jamás respondas a extorsiones, corta contacto y pide ayuda inmediata.</div>
-        <span class="item-tech">Denuncia</span>
-    </div>
-    <div class="item">
-        <div class="item-name">Evita riesgos</div>
-        <div class="item-desc">No compartas contenido íntimo, aunque confíes en la otra persona.</div>
-        <span class="item-tech">Seguridad personal</span>
-    </div>
-</div>
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
 
-<!-- Bio Analysis -->
-<div class="card purple">
-    <h3 class="card-title">Privacidad</h3>
-    <div class="item">
-        <div class="item-name">Sobreexposición</div>
-        <div class="item-desc">Publicar demasiada información personal puede ponerte en peligro.</div>
-        <span class="item-tech">Datos personales</span>
-    </div>
-    <div class="item">
-        <div class="item-name">Configuración</div>
-        <div class="item-desc">Ajusta bien la privacidad de tus cuentas para limitar quién ve tu contenido.</div>
-        <span class="item-tech">Privacidad</span>
-    </div>
-    <div class="item">
-        <div class="item-name">Peligros</div>
-        <div class="item-desc">Delincuentes pueden usar tu información para estafas o suplantación de identidad.</div>
-        <span class="item-tech">Ciberseguridad</span>
-    </div>
-</div>
+        .header p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
 
-<!-- Data -->
-<div class="card yellow">
-    <h3 class="card-title">Adicción Digital</h3>
-    <div class="item">
-        <div class="item-name">Uso excesivo</div>
-        <div class="item-desc">Pasar muchas horas conectado puede afectar tu salud física y mental.</div>
-        <span class="item-tech">Dependencia</span>
-    </div>
-    <div class="item">
-        <div class="item-name">Impacto emocional</div>
-        <div class="item-desc">Puede generar ansiedad, frustración o aislamiento social.</div>
-        <span class="item-tech">Salud emocional</span>
-    </div>
-    <div class="item">
-        <div class="item-name">Soluciones</div>
-        <div class="item-desc">Establece límites, toma descansos y realiza actividades fuera de pantalla.</div>
-        <span class="item-tech">Equilibrio</span>
-    </div>
-</div>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
 
-<!-- Infrastructure -->
-<div class="card gray">
-    <h3 class="card-title">Desinformación</h3>
-    <div class="item">
-        <div class="item-name">Fake news</div>
-        <div class="item-desc">Contenido falso o manipulado se propaga rápido y desinforma a millones.</div>
-        <span class="item-tech">Información errónea</span>
-    </div>
-    <div class="item">
-        <div class="item-name">Verifica fuentes</div>
-        <div class="item-desc">Antes de compartir, asegúrate de que la información provenga de medios confiables.</div>
-        <span class="item-tech">Educación digital</span>
-    </div>
-    <div class="item">
-        <div class="item-name">Responsabilidad</div>
-        <div class="item-desc">Evita ser parte de la cadena de desinformación en redes.</div>
-        <span class="item-tech">Pensamiento crítico</span>
-    </div>
-</div>
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: background 0.3s ease;
+        }
 
-<!-- Bottom Section -->
-<div class="bottom">
-    <h2>¿Cómo Protegerte?</h2>
-    <div class="features">
-        <div class="feature">
-            <div class="feature-icon">🔒</div>
-            <h3>Cuida tu privacidad</h3>
-            <p>No compartas información personal ni fotos privadas. Usa contraseñas seguras y cambia tus claves con frecuencia.</p>
+        .card:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .item-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 5px;
+        }
+
+        .item-tech {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            color: #eee;
+        }
+
+        .blue { border-left: 4px solid #4488ff; }
+        .green { border-left: 4px solid #00cc66; }
+        .red { border-left: 4px solid #ff4444; }
+        .purple { border-left: 4px solid #aa44ff; }
+        .yellow { border-left: 4px solid #ffaa00; }
+        .gray { border-left: 4px solid #888; }
+
+        .bottom {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .bottom h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2rem; }
+            .grid { grid-template-columns: 1fr; }
+            .container { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>El Peligro de las Redes Sociales</h1>
+            <p>Conoce los riesgos más comunes y cómo protegerte en el mundo digital.</p>
         </div>
-        <div class="feature">
-            <div class="feature-icon">🧬</div>
-            <h3>Habla con alguien</h3>
-            <p>Si te sentís acosado o incómodo, hablá con un adulto o persona de confianza. No estás solo.</p>
+
+        <!-- Cards Grid -->
+        <div class="grid">
+            <!-- Ciberbullying -->
+            <div class="card blue">
+                <h3 class="card-title">Ciberbullying</h3>
+                <div class="item">
+                    <div class="item-name">Acoso en línea</div>
+                    <div class="item-desc">El ciberacoso puede afectar emocionalmente y psicológicamente a las víctimas.</div>
+                    <span class="item-tech">Redes sociales</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Difusión de rumores</div>
+                    <div class="item-desc">La propagación rápida de información falsa puede dañar reputaciones.</div>
+                    <span class="item-tech">Mensajería instantánea</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Exclusión social digital</div>
+                    <div class="item-desc">Ignorar o aislar a alguien en grupos o chats puede causar daño psicológico.</div>
+                    <span class="item-tech">Foros y chats</span>
+                </div>
+            </div>
+
+            <!-- Privacidad -->
+            <div class="card green">
+                <h3 class="card-title">Privacidad</h3>
+                <div class="item">
+                    <div class="item-name">Robo de datos</div>
+                    <div class="item-desc">Los hackers pueden acceder a información personal y financiera.</div>
+                    <span class="item-tech">Phishing, malware</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Exposición excesiva</div>
+                    <div class="item-desc">Compartir demasiada información personal aumenta riesgos de seguridad.</div>
+                    <span class="item-tech">Redes sociales</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Seguimiento no deseado</div>
+                    <div class="item-desc">Empresas y terceros pueden monitorear tus actividades sin consentimiento.</div>
+                    <span class="item-tech">Cookies, trackers</span>
+                </div>
+            </div>
+
+            <!-- Fraudes -->
+            <div class="card red">
+                <h3 class="card-title">Fraudes</h3>
+                <div class="item">
+                    <div class="item-name">Estafas financieras</div>
+                    <div class="item-desc">Ofertas falsas y fraudes pueden hacer que pierdas dinero.</div>
+                    <span class="item-tech">Emails, redes sociales</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Suplantación de identidad</div>
+                    <div class="item-desc">Alguien puede hacerse pasar por ti para cometer delitos.</div>
+                    <span class="item-tech">Phishing, deepfakes</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Enlaces maliciosos</div>
+                    <div class="item-desc">Clic en enlaces fraudulentos puede infectar tu dispositivo.</div>
+                    <span class="item-tech">Mensajes, correos</span>
+                </div>
+            </div>
+
+            <!-- Salud Mental -->
+            <div class="card purple">
+                <h3 class="card-title">Salud Mental</h3>
+                <div class="item">
+                    <div class="item-name">Ansiedad y estrés</div>
+                    <div class="item-desc">La presión social y la comparación constante afectan el bienestar.</div>
+                    <span class="item-tech">Redes sociales</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Adicción a la pantalla</div>
+                    <div class="item-desc">El uso excesivo puede alterar el sueño y las relaciones personales.</div>
+                    <span class="item-tech">Smartphones, apps</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Depresión digital</div>
+                    <div class="item-desc">Comentarios negativos y aislamiento pueden generar tristeza profunda.</div>
+                    <span class="item-tech">Plataformas sociales</span>
+                </div>
+            </div>
+
+            <!-- Desinformación -->
+            <div class="card yellow">
+                <h3 class="card-title">Desinformación</h3>
+                <div class="item">
+                    <div class="item-name">Noticias falsas</div>
+                    <div class="item-desc">La difusión de información incorrecta puede confundir a la sociedad.</div>
+                    <span class="item-tech">Medios digitales</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Manipulación de opinión</div>
+                    <div class="item-desc">Grupos usan las redes para influenciar y polarizar a las personas.</div>
+                    <span class="item-tech">Bots, trolls</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Sensacionalismo</div>
+                    <div class="item-desc">Títulos y noticias exageradas buscan atraer clicks y generar alarma.</div>
+                    <span class="item-tech">Medios sociales</span>
+                </div>
+            </div>
+
+            <!-- Seguridad Digital -->
+            <div class="card gray">
+                <h3 class="card-title">Seguridad Digital</h3>
+                <div class="item">
+                    <div class="item-name">Contraseñas seguras</div>
+                    <div class="item-desc">Usar claves fuertes y diferentes para cada cuenta protege tus datos.</div>
+                    <span class="item-tech">Autenticación</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Actualizaciones</div>
+                    <div class="item-desc">Mantener software y apps actualizados evita vulnerabilidades.</div>
+                    <span class="item-tech">Sistemas, apps</span>
+                </div>
+                <div class="item">
+                    <div class="item-name">Verificación en dos pasos</div>
+                    <div class="item-desc">Agregar capas extra de seguridad reduce riesgos de hackeo.</div>
+                    <span class="item-tech">Móviles, autenticadores</span>
+                </div>
+            </div>
         </div>
-        <div class="feature">
-            <div class="feature-icon">🚀</div>
-            <h3>Usá la tecnología con responsabilidad</h3>
-            <p>Disfrutá las redes sociales con criterio. Pensá antes de publicar y cuidá tu bienestar digital.</p>
+
+        <!-- Bottom Section -->
+        <div class="bottom">
+            <h2>Cómo Protegerte en las Redes Sociales</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacidad</h3>
+                    <p>Configura correctamente las opciones de privacidad para controlar quién ve tu información.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🧬</div>
+                    <h3>Educación Digital</h3>
+                    <p>Infórmate sobre los riesgos y aprende a identificar señales de alerta para navegar seguro.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Actualización Constante</h3>
+                    <p>Mantén tus dispositivos y aplicaciones al día para protegerte de nuevas amenazas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2025 Seguridad Digital. Todos los derechos reservados.</p>
         </div>
     </div>
-</div>
-
-<!-- Footer -->
-<div class="footer">
-    <p>© 2025 Conciencia Digital. Todos los derechos reservados.</p>
-</div>
+</body>
+</html>
